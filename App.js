@@ -1,10 +1,9 @@
-/**
- * My To Do List App
- *
- * @format
- */
+/* My To Do List App
+*
+* @format
+*/
 
-import React from 'react';
+import React, { useState } from 'react';
 import {
     SafeAreaView,
     StyleSheet,
@@ -20,6 +19,26 @@ import ToDoList from './ToDoList';
 
 
 export default function App() {
+    const [tasks, setTasks] = useState([
+        'Do laundry',
+        'Go to gym',
+        'Walk dog'
+    ]);
+
+    return (
+        <SafeAreaView>
+            <ScrollView>
+                <ToDoList tasks={tasks.map(task => ({name: task, completed: false}))} />
+            </ScrollView>
+            <View>
+                <ToDoForm />
+            </View>
+        </SafeAreaView>
+    );
+}
+
+/*
+export default function App() {
     return (
         <SafeAreaView>
             <ScrollView>
@@ -31,3 +50,4 @@ export default function App() {
         </SafeAreaView>
     );
 }
+*/
