@@ -28,3 +28,16 @@ const styles = StyleSheet.create({
         marginRight: 10,
     },
 });
+
+
+/*
+export default function ToDoForm() {
+<View style={styles.form}>
+    <TextInput
+        style={styles.input}
+        placeholder="Add a new task..."
+    />
+    <Button title="Add" />
+</View>
+}
+*/

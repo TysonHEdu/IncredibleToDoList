@@ -98,6 +98,12 @@ function App(): JSX.Element {
   );
 }
 
+const addTask = (task) => {
+  const addTask = (taskText) => {
+    setTasks([...task, taskText]);
+  };
+};
+
 const styles = StyleSheet.create({
   sectionContainer: {
     marginTop: 32,

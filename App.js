@@ -31,7 +31,7 @@ export default function App() {
                 <ToDoList tasks={tasks.map(task => ({name: task, completed: false}))} />
             </ScrollView>
             <View>
-                <ToDoForm />
+                <ToDoForm addTask={addTask} />
             </View>
         </SafeAreaView>
     );
