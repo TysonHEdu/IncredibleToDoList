@@ -24,8 +24,8 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import ToDoList from './ToDoList';
-import ToDoForm from './ToDoForm';
+import ToDoList from './src/Components/ToDoList';
+import ToDoForm from './src/Components/ToDoForm';
 
 type SectionProps = PropsWithChildren<{
   title: string;
